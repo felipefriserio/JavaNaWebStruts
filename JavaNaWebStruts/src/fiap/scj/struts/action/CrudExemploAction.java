@@ -8,6 +8,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 @Namespace("/")
 public class CrudExemploAction extends ActionSupport{
+	private String mensagem = "teste";
 	
 	@Action(value="welcome", results = {
 			@Result(name = "success", location="sucesso.jsp"),
@@ -16,5 +17,4 @@ public class CrudExemploAction extends ActionSupport{
 	public String execute() throws Exception{
 		return SUCCESS;
 	}
-	
 }
